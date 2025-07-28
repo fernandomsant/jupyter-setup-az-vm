@@ -38,7 +38,7 @@ az vm extension set \
   --vm-name $VM_NAME \
   --name customScript \
   --publisher Microsoft.Azure.Extensions \
-  --settings '{"fileUris": ["https://gist.githubusercontent.com/fernandomsant/91ca6d7a231760fa9c4167b48af0da2d/raw/93d1408694ce5c0ea2f384bf67b4568008652870/jupyter_setup.sh"], "commandToExecute": "./jupyter_setup.sh"}'
+  --settings '{"fileUris": ["https://gist.githubusercontent.com/fernandomsant/91ca6d7a231760fa9c4167b48af0da2d/raw/603eab9f51cbd0e357973470cff20260d7fa1ace/jupyter_setup.sh"], "commandToExecute": "./jupyter_setup.sh"}'
 
 ssh-keyscan -H $IP_ADDRESS >> ~/.ssh/known_hosts
 
