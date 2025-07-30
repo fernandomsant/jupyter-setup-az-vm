@@ -30,6 +30,7 @@ IP_ADDRESS=$(az vm create \
   --zone $ZONE \
   --query publicIpAddress \
   -o tsv)
+IP_ADDRESS=$(echo "$IP_ADDRESS" | tr -d '[:space:]')
 
 az vm open-port --resource-group $RESOURCE_GROUP --name $VM_NAME --port 22,8888
 
